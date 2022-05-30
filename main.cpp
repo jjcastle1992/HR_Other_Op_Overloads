@@ -62,7 +62,7 @@ ostream& operator << (ostream& os, Complex summedComplex) {
     int imaginaryNum = 0;
     realNum = summedComplex.a;
     imaginaryNum = summedComplex.b;
-    os << realNum << "+i" << imaginaryNum;
+    return os << realNum << "+i" << imaginaryNum;
 }
 
 int main()
