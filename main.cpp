@@ -57,6 +57,14 @@ Complex operator + (Complex x, Complex y) {
     return newComplex;
 }
 
+ostream& operator << (ostream& os, Complex summedComplex) {
+    int realNum = 0;
+    int imaginaryNum = 0;
+    realNum = summedComplex.a;
+    imaginaryNum = summedComplex.b;
+    os << realNum << "+i" << imaginaryNum;
+}
+
 int main()
 {
     Complex x,y;
@@ -66,5 +74,5 @@ int main()
     x.input(s1);
     y.input(s2);
     Complex z=x+y;
-//    cout<<z<<endl;
+    cout<<z<<endl;
 }
